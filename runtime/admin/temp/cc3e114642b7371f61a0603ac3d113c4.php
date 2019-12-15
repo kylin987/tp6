@@ -1,4 +1,4 @@
-<?php /*a:1:{s:53:"/home/vagrant/Code/tp/app/admin/view/index/index.html";i:1576317092;}*/ ?>
+<?php /*a:1:{s:53:"/home/vagrant/Code/tp/app/admin/view/index/index.html";i:1576381658;}*/ ?>
 <!doctype html>
 <html class="x-admin-sm">
     <head>
@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="/static/admin/css/font.css">
         <link rel="stylesheet" href="/static/admin/css/xadmin.css">
         <!-- <link rel="stylesheet" href="/static/admin/css/theme5.css"> -->
+        <link rel="stylesheet" href="/static/admin/css/theme49.min.css">
         <script src="/static/admin/lib/layui/layui.js" charset="utf-8"></script>
         <script type="text/javascript" src="/static/admin/js/xadmin.js"></script>
         <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
@@ -346,7 +347,7 @@
                 </div>
                 <div class="layui-tab-content">
                     <div class="layui-tab-item layui-show">
-                        <iframe src='/admin/Index/welcome' frameborder="0" scrolling="yes" class="x-iframe"></iframe>
+                        <iframe src='<?php echo url("welcome"); ?>' frameborder="0" scrolling="yes" class="x-iframe"></iframe>
                     </div>
                 </div>
                 <div id="tab_show"></div>
@@ -356,13 +357,7 @@
         <style id="theme_style"></style>
         <!-- 右侧主体结束 -->
         <!-- 中部结束 -->
-        <script>//百度统计可去掉
-            var _hmt = _hmt || []; (function() {
-                var hm = document.createElement("script");
-                hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-            })();</script>
+
     </body>
 
 </html>
