@@ -10,5 +10,5 @@
 // +----------------------------------------------------------------------
 use think\facade\Route;
 
-Route::get('index', 'Index/index');
+Route::get('/', 'Index/index');
 Route::get('welcome', 'Index/welcome')->name('welcome');

@@ -17,8 +17,8 @@ class Index
         return view();
     }
 
-    public function hello($name)
+    public function hello()
     {
-        return 'hello ' . $name;
+        return 'hello ';
     }
 }
