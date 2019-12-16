@@ -12,3 +12,6 @@ use think\facade\Route;
 
 Route::get('/', 'Index/index');
 Route::get('welcome', 'Index/welcome')->name('welcome');
+
+Route::get('setpassword', 'Manager/setPassword');
+Route::post('setpassword', 'Manager/storePassword');

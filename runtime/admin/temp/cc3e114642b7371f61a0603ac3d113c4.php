@@ -1,4 +1,4 @@
-<?php /*a:1:{s:53:"/home/vagrant/Code/tp/app/admin/view/index/index.html";i:1576381658;}*/ ?>
+<?php /*a:1:{s:53:"/home/vagrant/Code/tp/app/admin/view/index/index.html";i:1576470525;}*/ ?>
 <!doctype html>
 <html class="x-admin-sm">
     <head>
@@ -61,7 +61,7 @@
                     <dl class="layui-nav-child">
                         <!-- 二级菜单 -->
                         <dd>
-                            <a onclick="xadmin.open('个人信息','http://www.baidu.com')">个人信息</a></dd>
+                            <a onclick="xadmin.open('密码修改','<?php echo url('Manager/setpassword'); ?>')">密码修改</a></dd>
                         <dd>
                             <a onclick="xadmin.open('切换帐号','http://www.baidu.com')">切换帐号</a></dd>
                         <dd>
