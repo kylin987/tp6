@@ -1,4 +1,4 @@
-<?php /*a:1:{s:62:"/home/vagrant/Code/tp/app/admin/view/manager/set_password.html";i:1576472687;}*/ ?>
+<?php /*a:1:{s:62:"/home/vagrant/Code/tp/app/admin/view/manager/set_password.html";i:1576473130;}*/ ?>
 <!DOCTYPE html>
 <html class="x-admin-sm">
     <head>
@@ -87,12 +87,6 @@
                 });
 
             });</script>
-        <script>var _hmt = _hmt || []; (function() {
-                var hm = document.createElement("script");
-                hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-            })();</script>
     </body>
 
 </html>
