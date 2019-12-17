@@ -1,4 +1,4 @@
-<?php /*a:1:{s:62:"/home/vagrant/Code/tp/app/admin/view/manager/set_password.html";i:1576473130;}*/ ?>
+<?php /*a:1:{s:62:"/home/vagrant/Code/tp/app/admin/view/manager/set_password.html";i:1576567608;}*/ ?>
 <!DOCTYPE html>
 <html class="x-admin-sm">
     <head>
@@ -64,6 +64,7 @@
                     $.post("<?php echo url('Manager/setpassword'); ?>",data.field,function(res){
                        var alert_index; 
                        var status;
+                       console.log(res);
                        if (res.code == 1) {
                             status = 6;
                        }else {
