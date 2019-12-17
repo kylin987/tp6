@@ -5,7 +5,6 @@ namespace app\admin\controller;
 
 use think\Request;
 use app\admin\model\Manager as ManagerModel;
-use think\facade\Session;
 use app\admin\validate\Manager as ManagerValidate;
 use think\exception\ValidateException;
 
@@ -17,13 +16,12 @@ class Manager
         return view();
     }
 
-    public function storePassword(Request $request){
-        Session::set('adminid',1);
+    public function storePassword(Request $request){        
         $data = $request->post();
 
         //数据基础验证
         try {
-            validate(ManagerValidate::class)->check($data);
+            validate(ManagerValidate::class)->scene('setpassword')->check($data);
         } catch (ValidateException $e) {
             // 验证失败 输出错误信息
              return return_msg(0,$e->getError());

@@ -10,8 +10,11 @@
 // +----------------------------------------------------------------------
 use think\facade\Route;
 
-Route::get('/', 'Index/index');
+Route::get('/', 'Index/index')->name('/');
 Route::get('welcome', 'Index/welcome')->name('welcome');
 
 Route::get('setpassword', 'Manager/setPassword');
 Route::post('setpassword', 'Manager/storePassword');
+
+Route::get('login', 'Login/login')->name('login');
+Route::post('login', 'Login/doLogin');
